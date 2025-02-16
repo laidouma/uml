@@ -1,0 +1,53 @@
+@startuml
+
+actor Conducteur
+actor TechnicienMaintenance
+actor ConstructeurVehicule
+actor AutoriteRegulation
+actor SystemeEWheelEDrive as "Système E-Wheel/E-Drive"
+
+Conducteur --> (Démarrer le véhicule)
+Conducteur --> (Contrôler la direction)
+Conducteur --> (Gérer la vitesse)
+Conducteur --> (Activer le mode stationnement)
+Conducteur --> (Réagir aux conditions de route)
+Conducteur --> (Passer en mode économie d'énergie)
+Conducteur --> (Recevoir alertes de panne)
+
+TechnicienMaintenance --> (Diagnostiquer les pannes)
+TechnicienMaintenance --> (Mettre à jour le logiciel)
+TechnicienMaintenance --> (Effectuer une maintenance préventive)
+TechnicienMaintenance --> (Analyser les performances du système)
+
+ConstructeurVehicule --> (Intégrer le système au véhicule)
+ConstructeurVehicule --> (Configurer les paramètres par défaut)
+ConstructeurVehicule --> (Effectuer des tests de validation)
+ConstructeurVehicule --> (Assurer la compatibilité avec le véhicule)
+
+AutoriteRegulation --> (Vérifier conformité aux normes)
+AutoriteRegulation --> (Superviser l'efficacité énergétique)
+AutoriteRegulation --> (Contrôler la cybersécurité du système)
+
+(Démarrer le véhicule) --> SystemeEWheelEDrive
+(Contrôler la direction) --> SystemeEWheelEDrive
+(Gérer la vitesse) --> SystemeEWheelEDrive
+(Activer le mode stationnement) --> SystemeEWheelEDrive
+(Réagir aux conditions de route) --> SystemeEWheelEDrive
+(Passer en mode économie d'énergie) --> SystemeEWheelEDrive
+(Recevoir alertes de panne) --> SystemeEWheelEDrive
+
+(Diagnostiquer les pannes) --> SystemeEWheelEDrive
+(Mettre à jour le logiciel) --> SystemeEWheelEDrive
+(Effectuer une maintenance préventive) --> SystemeEWheelEDrive
+(Analyser les performances du système) --> SystemeEWheelEDrive
+
+(Intégrer le système au véhicule) --> SystemeEWheelEDrive
+(Configurer les paramètres par défaut) --> SystemeEWheelEDrive
+(Effectuer des tests de validation) --> SystemeEWheelEDrive
+(Assurer la compatibilité avec le véhicule) --> SystemeEWheelEDrive
+
+(Vérifier conformité aux normes) --> SystemeEWheelEDrive
+(Superviser l'efficacité énergétique) --> SystemeEWheelEDrive
+(Contrôler la cybersécurité du système) --> SystemeEWheelEDrive
+
+@enduml
